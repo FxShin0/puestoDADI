@@ -1,0 +1,360 @@
+/* Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Variables */
+:root {
+  --lightGray: #cfcfcf;
+  --white: #ffffff;
+  --strongRed: #e61220;
+  --yellow: #ffc107;
+  --black: #2d2e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Open Sans", "Poppins", sans-serif;
+  color: var(--black);
+  scroll-padding-top: 65px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--lightGray);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  width: 100vw;
+  padding: 5px 25px;
+  /* fondo */
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 41%,
+    rgba(207, 207, 207, 1) 63%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 41%,
+    rgba(207, 207, 207, 1) 63%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 41%,
+    rgba(207, 207, 207, 1) 63%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cfcfcf",GradientType=1);
+  border-bottom: solid 1px black;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(255, 255, 255, 0.77);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(255, 255, 255, 0.77);
+  box-shadow: 0px 4px 5px 0px rgba(255, 255, 255, 0.77);
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+
+.logoTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+.title {
+  font-size: 34px;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#menu-label,
+#menu-toggle {
+  display: none;
+}
+
+.heroText {
+  color: var(--black);
+  font-weight: 600;
+}
+
+/* Hero */
+#hero {
+  max-width: 1200px;
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.heroImage {
+  height: 470px;
+  width: 470px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  filter: brightness(0.9) contrast(1.1) saturate(1.2);
+  -webkit-filter: brightness(0.9) contrast(1.1) saturate(1.2);
+}
+
+.heroTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 58%;
+  text-align: center;
+}
+.heroTitle {
+  font-size: 55px;
+}
+
+.heroText {
+  font-size: 30px;
+}
+
+/* productos */
+
+#productos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.productosTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.productosTextContainer h2 {
+  font-size: 50px;
+}
+
+.productosTextContainer p {
+  font-size: 30px;
+}
+
+.productCardsContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.productCard {
+  height: 400px;
+  width: 275px;
+  background: var(--black);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cardImg {
+  height: 60%;
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.cardTextContainer h3 {
+  color: var(--strongRed);
+}
+.cardTextContainer p {
+  color: var(--white);
+}
+
+.cardTextContainer h3 {
+  font-size: 30px;
+}
+
+.redSpan {
+  color: var(--strongRed);
+  font-weight: 800;
+}
+
+/* contact */
+#contacto {
+  display: flex;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.contactCardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contactCard {
+  height: 450px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  text-align: center;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Google maps input */
+.iframe {
+  height: 65%;
+  width: 90%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.contactCardTextContainer h3 {
+  font-size: 40px;
+  color: var(--strongRed);
+}
+.contactCardTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardWsp,
+.cardEmail {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#wsp,
+#correo {
+  color: var(--strongRed);
+  font-size: 30px;
+}
+
+#electronicP {
+  font-size: 20px;
+  color: var(--lightGray);
+}
+
+.cardWsp p,
+.cardEmail p {
+  font-size: 20px;
+  color: var(--lightGray);
+}
+
+.contactoTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contactoTextContainer p {
+  font-size: 30px;
+}
+
+.contactoTextContainer h2 {
+  font-size: 50px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: solid 1px black;
+  /* fondo */
+  background: rgb(147, 146, 146);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(147, 146, 146, 1) 21%,
+    rgba(207, 207, 207, 1) 63%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(147, 146, 146, 1) 21%,
+    rgba(207, 207, 207, 1) 63%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(147, 146, 146, 1) 21%,
+    rgba(207, 207, 207, 1) 63%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#939292",endColorstr="#cfcfcf",GradientType=1);
+  -webkit-box-shadow: 0px -5px 13px -1px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px -5px 13px -1px rgba(255, 255, 255, 1);
+  box-shadow: 0px -5px 13px -1px rgba(255, 255, 255, 1);
+  text-align: center;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diarios DADI</title>
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Estilos responsive -->
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Estilos animaciones -->
+     <link rel="stylesheet" href="animations.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logoTitleContainer">
+          <img class="logo" src="./assets/iconoDiario.png" alt="Diario" />
+          <h1 class="title">Diarios <span class="redSpan">DADI</span></h1>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="menu-label">
+          <i class="fa-solid fa-bars" id="menu-logo"></i>
+        </label>
+        <ul class="navList">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section id="hero">
+        <div class="heroTextContainer slide-right">
+          <h2 class="heroTitle">
+            Puesto de Diarios <span class="redSpan">DADI
+              <span id="redux">: ¡Todo lo que buscás, impreso y al instante!</span>
+          </h2>
+          <p class="heroText">
+            Encontrá diarios, revistas, fascículos, colecciones exclusivas y
+            mucho más. Todo en un solo lugar, con la tradición y confianza que
+            merecés.
+          </p>
+        </div>
+        <img
+        class="heroImage slide-left"
+          src="./assets/dadiFrontimg.jpg"
+          alt="Foto del dueño del puesto"
+        />
+      </section>
+      <!-- Productos -->
+      <section id="productos" class="slide-top">
+        <div class="productosTextContainer">
+          <h2>Multiples productos, un solo lugar!</h2>
+          <p>
+            Tenemos una gran diversidad de diarios, revistas, libros y
+            coleccionables, todo el material impreso que usted pueda llegar a
+            necesitar esta en <span class="redSpan">DADI</span>.
+          </p>
+        </div>
+        <div class="productCardsContainer">
+          <!-- Diarios -->
+          <div class="productCard">
+            <img
+              class="cardImg"
+              src="./assets/newsPaperImgAlt.jpg"
+              alt="Diarios"
+            />
+            <div class="cardTextContainer">
+              <h3>Diarios</h3>
+              <p>
+                Contamos con multiples diarios tales como Clarin, Nacion,
+                Cronica y demas.
+              </p>
+            </div>
+          </div>
+          <!-- Revistas -->
+          <div class="productCard">
+            <img
+              class="cardImg"
+              src="./assets/revistasImg.jpg"
+              alt="Revistas"
+            />
+            <div class="cardTextContainer">
+              <h3>Revistas</h3>
+              <p>
+                Tenemos una gran variedad de revistas tales como Caras,
+                Noticias, etc.
+              </p>
+            </div>
+          </div>
+          <!-- Colecciones -->
+          <div class="productCard">
+            <img
+              class="cardImg"
+              src="./assets/coleccionables.webp"
+              alt="Coleccionables"
+            />
+            <div class="cardTextContainer">
+              <h3>Coleccionables</h3>
+              <p>
+                Explore colecciones de todo tipo: autos, cuerpo humano,
+                cuchillos, etc. Consulte precio!
+              </p>
+            </div>
+          </div>
+          <!-- Libros -->
+          <div class="productCard">
+            <img class="cardImg" src="./assets/libros.jpg" alt="Libros" />
+            <div class="cardTextContainer">
+              <h3>Libros</h3>
+              <p>
+                Contamos con una amplia seleccion de libros de distintos generos
+                literarios!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contacto -->
+      <section id="contacto">
+        <div class="contactoTextContainer">
+          <h2>Necesitas hacer alguna consulta? Contactanos!</h2>
+          <p>Podes realizar tu consulta a traves de los siguientes medios:</p>
+        </div>
+        <div class="contactCardsContainer">
+          <div class="contactCard">
+            <div class="contactCardTextContainer">
+              <h3>Medios electronicos</h3>
+              <p id="electronicP">
+                Podes contactarnos a traves de Whatsapp o a traves de nuestro
+                correo electronico!
+              </p>
+              <div class="cardWsp">
+                <i class="fa-brands fa-whatsapp" id="wsp"></i>
+                <p>11-2938-3290</p>
+              </div>
+              <div class="cardEmail">
+                <i class="fa-solid fa-envelope" id="correo"></i>
+                <p>diariosDADI@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contactCard">
+            <div class="cardTextContainer">
+              <h3>Presencial</h3>
+              <p>Podes ir al puesto de diario de manera presencial!</p>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.645288968715!2d-58.57196228861131!3d-34.638403072829036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7fae6a6b8af%3A0x77b92a155367b39e!2sAv.%20Gaona%202884%2C%20C1416DSQ%20Villa%20Sarmiento%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1736360096913!5m2!1ses!2sar"
+              class="iframe"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h4>Diarios <span class="redSpan">DADI</span></h4>
+      <h5>Av. Gaona 2884, Ramos Mejia, Buenos Aires, Argentina</h5>
+    </footer>
+  </body>
+</html>
